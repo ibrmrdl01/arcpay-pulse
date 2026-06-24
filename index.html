@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArcPay Pulse</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Arc Testnet dApp</p>
+          <h1>ArcPay Pulse</h1>
+          <p class="lede">
+            Stablecoin payment console for testing Arc USDC transfers, wallet state, and explorer-ready activity.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="connectWallet" class="primary-button">Connect Wallet</button>
+          <button id="switchNetwork" class="secondary-button">Use Arc Testnet</button>
+        </div>
+      </section>
+
+      <section class="status-band" aria-label="Wallet status">
+        <article>
+          <span>Wallet</span>
+          <strong id="walletAddress">Not connected</strong>
+        </article>
+        <article>
+          <span>Network</span>
+          <strong id="networkName">Unknown</strong>
+        </article>
+        <article>
+          <span>Native USDC Gas</span>
+          <strong id="nativeBalance">--</strong>
+        </article>
+        <article>
+          <span>USDC ERC-20</span>
+          <strong id="tokenBalance">--</strong>
+        </article>
+      </section>
+
+      <section id="walletHelp" class="wallet-help" hidden>
+        <strong>No browser wallet detected</strong>
+        <p>
+          Open this app in a desktop browser with MetaMask, Rabby, Coinbase Wallet, or another EVM wallet
+          extension enabled. If you opened the file directly, use the local URL instead.
+        </p>
+      </section>
+
+      <section class="workspace">
+        <form id="transferForm" class="panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Payment</p>
+            <h2>Send testnet USDC</h2>
+          </div>
+
+          <label>
+            Recipient
+            <input
+              id="recipient"
+              name="recipient"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="0x..."
+              required
+            />
+          </label>
+
+          <label>
+            Amount
+            <input id="amount" name="amount" inputmode="decimal" placeholder="1.25" required />
+          </label>
+
+          <label>
+            Memo
+            <input id="memo" name="memo" maxlength="80" placeholder="Invoice, payout, test run" />
+          </label>
+
+          <button class="primary-button full-width" type="submit">Send USDC</button>
+        </form>
+
+        <section class="panel activity-panel">
+          <div class="panel-heading">
+            <p class="eyebrow">Activity</p>
+            <h2>Explorer trail</h2>
+          </div>
+          <div id="activityList" class="activity-list">
+            <p class="empty-state">No transfers yet.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="community-band">
+        <div>
+          <p class="eyebrow">Community submission</p>
+          <h2>Shareable project brief</h2>
+        </div>
+        <button id="copyBrief" class="secondary-button">Copy Brief</button>
+        <textarea id="briefOutput" readonly></textarea>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="./src/app.js"></script>
+  </body>
+</html>
