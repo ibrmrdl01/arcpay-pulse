@@ -4,6 +4,8 @@ ArcPay Pulse is a small browser dApp for creating real Arc Testnet activity with
 
 Repository: `https://github.com/ibrmrdl01/arcpay-pulse`
 
+Live demo: `https://ibrmrdl01.github.io/arcpay-pulse/`
+
 ## Arc Network Details
 
 - Network: Arc Testnet

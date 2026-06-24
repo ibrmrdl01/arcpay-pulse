@@ -11,7 +11,7 @@ Arc usage:
 - Wallet actions: connect, switch/add Arc Testnet, read balances, send testnet USDC
 
 Links:
-- Demo: add your deployed URL
+- Demo: https://ibrmrdl01.github.io/arcpay-pulse/
 - GitHub: https://github.com/ibrmrdl01/arcpay-pulse
 - Explorer transactions:
   - https://testnet.arcscan.app/tx/0x9e1da828ca05bd630564a52f6f686500a73c19cb3468b2822e577356a18af2eb
