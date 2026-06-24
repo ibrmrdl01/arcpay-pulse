@@ -2,6 +2,8 @@
 
 ArcPay Pulse is a small browser dApp for creating real Arc Testnet activity with a wallet. It connects to an injected EVM wallet, switches or adds Arc Testnet, reads the native USDC gas balance, reads the ERC-20 USDC interface balance, and sends testnet USDC transfers.
 
+Repository: `https://github.com/ibrmrdl01/arcpay-pulse`
+
 ## Arc Network Details
 
 - Network: Arc Testnet

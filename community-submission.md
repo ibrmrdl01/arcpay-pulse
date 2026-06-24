@@ -12,7 +12,7 @@ Arc usage:
 
 Links:
 - Demo: add your deployed URL
-- GitHub: add your repository URL
+- GitHub: https://github.com/ibrmrdl01/arcpay-pulse
 - Explorer transactions:
   - https://testnet.arcscan.app/tx/0x9e1da828ca05bd630564a52f6f686500a73c19cb3468b2822e577356a18af2eb
 
